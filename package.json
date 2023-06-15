@@ -1,5 +1,6 @@
 {
   "name": "simplefolio",
+  "homepage": "https://DeryckQS.github.io/simplefolio",
   "version": "1.0.1",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
@@ -7,7 +8,9 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "gh-pages-build": "parcel build --public-url ."
+    "gh-pages-build": "parcel build --public-url .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
